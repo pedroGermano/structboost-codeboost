@@ -14,6 +14,10 @@ header .container {
   justify-content: space-between;
 }
 
+header .btn-mobile {
+  display: none;
+}
+
 header nav {
   display: flex;
   align-items: center;
@@ -44,6 +48,7 @@ header nav ul li a:hover {
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+  display: none;
 }
 
 .s-hero::after {
@@ -105,6 +110,7 @@ header nav ul li a:hover {
 
 .s-digital {
   padding: 12.8rem;
+  display: none;
 }
 
 .s-digital h3 {
@@ -123,6 +129,7 @@ header nav ul li a:hover {
 
 .s-art-front {
   padding: 12.8rem 0;
+  display: none;
 }
 
 .s-art-front .title-text {
@@ -176,6 +183,7 @@ header nav ul li a:hover {
   width: 100%;
   padding: 8.9rem 0;
   background: var(--pink-10);
+  display: none;
 }
 
 .s-newsletter .container {
@@ -198,6 +206,7 @@ header nav ul li a:hover {
 
 footer {
   padding: 4.8rem 0;
+  display: none;
 }
 
 footer .main-area {
@@ -257,4 +266,28 @@ footer .main-area .right .item-nav ul li a:hover {
 footer .copy {
   color: var(--gray-600);
   letter-spacing: -0.48px;
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+  header .btn-mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 560px) {
+  header {
+    height: 7.2rem;
+  }
+  header .logo {
+    max-width: 16rem;
+  }
 }
