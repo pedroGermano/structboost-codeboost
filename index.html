@@ -10,6 +10,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Structboost</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/components.css" />
@@ -39,7 +40,7 @@
     </header>
     <section class="s-hero">
       <div class="container">
-        <div class="text">
+        <div class="text" data-aos="fade-right">
           <h1>Front-end descomplicado e direto ao ponto!</h1>
           <p>
             Aprenda a desenvolver interfaces modernas e de alta qualidade com
@@ -49,14 +50,27 @@
           <img class="arrow" src="./img/arrow.svg" alt="arrow icon" />
         </div>
       </div>
-      <img class="ilustra" src="img/hero-illustration.svg" alt="hero" />
-      <img class="ilustra-mobile" src="img/hero-mobile.svg" alt="hero" />
+      <img
+        class="ilustra"
+        src="img/hero-illustration.svg"
+        data-aos="fade-up"
+        data-aos-delay="300"
+        alt="hero"
+      />
+      <img
+        class="ilustra-mobile"
+        src="img/hero-mobile.svg"
+        data-aos="fade-up"
+        alt="hero"
+      />
     </section>
     <section class="s-digital">
       <div class="container">
-        <h3>Transformando Ideias em Realidade Digital!</h3>
+        <h3 data-aos="fade-right">
+          Transformando Ideias em Realidade Digital!
+        </h3>
         <ul>
-          <li>
+          <li data-aos="fade-right">
             <div class="item-digital">
               <div class="icon">
                 <img src="img/icons/face.svg" alt="icon face" />
@@ -71,7 +85,7 @@
               </div>
             </div>
           </li>
-          <li>
+          <li data-aos="fade-right">
             <div class="item-digital">
               <div class="icon">
                 <img src="img/icons/computers.svg" alt="icon face" />
@@ -86,7 +100,7 @@
               </div>
             </div>
           </li>
-          <li>
+          <li data-aos="fade-left">
             <div class="item-digital">
               <div class="icon">
                 <img src="img/icons/search-graph.svg" alt="icon face" />
@@ -280,5 +294,11 @@
         <p class="copy">2023 © Todos os direitos reservados. Codeboost</p>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+      });
+    </script>
   </body>
 </html>
