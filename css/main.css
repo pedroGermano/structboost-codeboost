@@ -48,7 +48,6 @@ header nav ul li a:hover {
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  display: none;
 }
 
 .s-hero::after {
@@ -108,9 +107,12 @@ header nav ul li a:hover {
   padding: 0 1.5rem;
 }
 
+.s-hero .ilustra-mobile {
+  display: none;
+}
+
 .s-digital {
   padding: 12.8rem;
-  display: none;
 }
 
 .s-digital h3 {
@@ -129,7 +131,6 @@ header nav ul li a:hover {
 
 .s-art-front {
   padding: 12.8rem 0;
-  display: none;
 }
 
 .s-art-front .title-text {
@@ -183,7 +184,6 @@ header nav ul li a:hover {
   width: 100%;
   padding: 8.9rem 0;
   background: var(--pink-10);
-  display: none;
 }
 
 .s-newsletter .container {
@@ -206,7 +206,6 @@ header nav ul li a:hover {
 
 footer {
   padding: 4.8rem 0;
-  display: none;
 }
 
 footer .main-area {
@@ -269,9 +268,36 @@ footer .copy {
 }
 
 @media (max-width: 1200px) {
+  .s-digital {
+    padding-top: 6.8rem;
+  }
+  .s-digital ul {
+    gap: 3.2rem;
+    padding-bottom: 6.8rem;
+  }
+  .item-digital .info h6 {
+    font-size: 2rem;
+  }
+  .item-digital .info p {
+    font-size: 1.6rem;
+  }
+  .s-art-front .all {
+    gap: 1.6rem;
+  }
+  .s-art-front .all .card-post:first-child,
+  .s-art-front .all .card-post:first-child:nth-child(2) {
+    grid-column: span 3;
+  }
 }
 
 @media (max-width: 991px) {
+  .s-hero::after {
+    height: 13rem;
+  }
+  .s-digital ul {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media (max-width: 768px) {
@@ -281,6 +307,26 @@ footer .copy {
   header .btn-mobile {
     display: block;
   }
+  .s-hero {
+    padding-top: 6rem;
+  }
+  .s-hero .text h1 {
+    max-width: 49rem;
+    margin: 0 auto;
+  }
+  .s-hero .text h1::before {
+    left: 0;
+    bottom: -4px;
+    background-size: 100%;
+  }
+  .s-hero .text p {
+    max-width: 41.6rem;
+  }
+  .s-hero .text .arrow {
+    bottom: 3.7rem;
+    left: 2rem;
+    max-width: 6rem;
+  }
 }
 
 @media (max-width: 560px) {
@@ -289,5 +335,46 @@ footer .copy {
   }
   header .logo {
     max-width: 16rem;
+  }
+  .s-hero {
+    padding-top: 8.8rem;
+  }
+  .s-hero .text h1 {
+    font-size: 4rem;
+  }
+  .s-hero .text h1::before {
+    bottom: -0.6rem;
+  }
+
+  .s-hero .text p {
+    margin-top: 0.8rem;
+    margin-bottom: 2.4rem;
+    font-size: 1.6rem;
+  }
+  .s-hero .text .arrow {
+    display: none;
+  }
+  .s-hero .ilustra {
+    display: none;
+  }
+  .s-hero .ilustra-mobile {
+    display: block;
+  }
+  .s-hero::after {
+    height: 22rem;
+  }
+  .s-digital {
+    padding-top: 8rem;
+  }
+  .s-digital ul {
+    padding-bottom: 8rem;
+  }
+
+  .s-digital h3 {
+    font-size: 2.8rem;
+  }
+
+  .s-digital ul {
+    gap: 6.4rem;
   }
 }
