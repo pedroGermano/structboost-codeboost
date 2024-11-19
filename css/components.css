@@ -18,7 +18,6 @@
 .btn-primary.white:hover {
   background-color: var(--gray-900);
   color: #fff;
-  border: 1px solid #fff;
 }
 
 .btn-primary.lg {
